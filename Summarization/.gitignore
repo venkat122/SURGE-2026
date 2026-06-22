@@ -1,0 +1,11 @@
+# Ignore dataset files (these can be massive and crash git pushes)
+data/
+!data/.keep
+
+# Ignore model weights and checkpoints (Use Git LFS if you really need to push these)
+weights/
+!weights/.keep
+
+# Ignore Python caches
+__pycache__/
+*.pyc
