@@ -2,10 +2,15 @@
 data/
 !data/.keep
 
-# Ignore model weights and checkpoints (Use Git LFS if you really need to push these)
-weights/
-!weights/.keep
+# Ignore base model checkpoints (Use Git LFS if you really need to push these)
+models/
+!models/.keep
+
 
 # Ignore Python caches
 __pycache__/
 *.pyc
+*.pyo
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
