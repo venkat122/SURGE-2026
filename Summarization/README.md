@@ -117,47 +117,47 @@ deactivate
 
 ```text
 Summarization/
-├── README.md               # You are here!
-├── requirements_legalsum.txt # Primary ML dependencies (Torch, Transformers, TRl)
-├── requirements_opennyai.txt # Modular NLP dependencies (OpenNYAI, spaCy)
-├── analysis/               # Exploratory data analysis scripts
+├── README.md          					# You are here!
+├── requirements_legalsum.txt 				# Primary ML dependencies (Torch, Transformers, TRl)
+├── requirements_opennyai.txt 				# Modular NLP dependencies (OpenNYAI, spaCy)
+├── analysis/               				# Exploratory data analysis scripts
 ├── data/
-│   ├── raw/                # Original unstructured legal documents
-│   └── processed/          # Pre-tokenized, tagged, and preference datasets
-├── logs/                   # Training and evaluation logs
-├── models/                 # Cached HuggingFace base models
-├── notebooks/              # Jupyter notebooks for interactive testing
+│   ├── raw/   						# Original unstructured legal documents
+│   └── processed/     					# Pre-tokenized, tagged, and preference datasets
+├── logs/                   				# Training and evaluation logs
+├── models/                 				# Cached HuggingFace base models
+├── notebooks/              				# Jupyter notebooks for interactive testing
 ├── src/
-│   ├── baseline/           # Phase 1: Basic SFT
-│   │   └── train_v1_baseline.py # Trains initial LED-base model on raw data
-│   ├── common/             # Shared evaluation metrics and dataloaders
-│   │   ├── dataset_loader.py    # Common IO for loading train/test splits
-│   │   ├── check_lengths.py     # Token length distribution analysis
-│   │   ├── evaluate_models.py   # ROUGE/BERTScore evaluation suite
-│   │   └── evaluate_dpo_models.py # DPO-specific evaluation wrappers
-│   ├── data_processing/    # Raw dataset extraction and cleaning
-│   ├── dpo_baseline/       # Phase 4: DPO applied to Optimized Baseline
-│   │   └── train_dpo_baseline.py # Runs DPO alignment on the baseline model
-│   ├── dpo_dataset_generation/ # Phase 4: Constructing positive/negative pairs
-│   │   ├── create_dpo_dataset.py # Generates hallucinated negative samples
-│   │   └── train_dpo_dataset.py  # Compiles the final DPO JSONL pairs
-│   ├── dpo_rhetorical/     # Phase 4: DPO applied to Rhetorical model
-│   │   └── train_dpo_rhetorical.py # Runs DPO alignment on the tagged model
-│   ├── dynamic_chunking/   # Phase 5: Map-Reduce inference engine
-│   │   ├── dynamic_chunking_inference.py # Core recursive summarizer algorithm
-│   │   ├── evaluate_chunking_benchmark.py # Stress-tests the 15 longest documents
-│   │   └── run_chunking_on_all.py # Bulk inference generator for datasets
-│   ├── optimized_baseline/ # Phase 2: Enhanced SFT
-│   │   ├── train_optimized_baseline.py # SFT with expanded Q,K,V targeting
-│   │   └── batch_orchestrator.py # VRAM-safe batch generation tool
-│   ├── rhetorical_role/    # Phase 3: OpenNYAI integration
-│   │   ├── run_opennyai_local.py # [Env: opennyai_env] Extracts and injects legal tags
-│   │   └── train_rhetorical_role.py # Fine-tunes model on structurally tagged data
-│   └── scripts/            # High-level execution scripts
-│       ├── run_rhetorical_pipeline.py # Full pipeline orchestrator
-│       ├── run_dual_dpo.py # Queues DPO for both Baseline and Rhetorical 
-│       └── run_final_tests.py # Full automated ROUGE/BERTScore evaluation
-└── weights/                # LoRA adapter checkpoints (Safe to push)
+│   ├── baseline/           				# Phase 1: Basic SFT
+│   │   └── train_v1_baseline.py 			# Trains initial LED-base model on raw data
+│   ├── common/        					# Shared evaluation metrics and dataloaders
+│   │   ├── dataset_loader.py    			# Common IO for loading train/test splits
+│   │   ├── check_lengths.py     			# Token length distribution analysis
+│   │   ├── evaluate_models.py   			# ROUGE/BERTScore evaluation suite
+│   │   └── evaluate_dpo_models.py 			# DPO-specific evaluation wrappers
+│   ├── data_processing/    				# Raw dataset extraction and cleaning
+│   ├── dpo_baseline/       				# Phase 4: DPO applied to Optimized Baseline
+│   │   └── train_dpo_baseline.py 			# Runs DPO alignment on the baseline model
+│   ├── dpo_dataset_generation/ 			# Phase 4: Constructing positive/negative pairs
+│   │   ├── create_dpo_dataset.py 			# Generates hallucinated negative samples
+│   │   └── train_dpo_dataset.py  			# Compiles the final DPO JSONL pairs
+│   ├── dpo_rhetorical/     				# Phase 4: DPO applied to Rhetorical model
+│   │   └── train_dpo_rhetorical.py 			# Runs DPO alignment on the tagged model
+│   ├── dynamic_chunking/   				# Phase 5: Map-Reduce inference engine
+│   │   ├── dynamic_chunking_inference.py 		# Core recursive summarizer algorithm
+│   │   ├── evaluate_chunking_benchmark.py 		# Stress-tests the 15 longest documents
+│   │   └── run_chunking_on_all.py 			# Bulk inference generator for datasets
+│   ├── optimized_baseline/ 				# Phase 2: Enhanced SFT
+│   │   ├── train_optimized_baseline.py 		# SFT with expanded Q,K,V targeting
+│   │   └── batch_orchestrator.py 			# VRAM-safe batch generation tool
+│   ├── rhetorical_role/    				# Phase 3: OpenNYAI integration
+│   │   ├── run_opennyai_local.py 			# [Env: opennyai_env] Extracts and injects legal tags
+│   │   └── train_rhetorical_role.py 			# Fine-tunes model on structurally tagged data
+│   └── scripts/            				# High-level execution scripts
+│       ├── run_rhetorical_pipeline.py 			# Full pipeline orchestrator
+│       ├── run_dual_dpo.py 				# Queues DPO for both Baseline and Rhetorical 
+│       └── run_final_tests.py 				# Full automated ROUGE/BERTScore evaluation
+└── weights/                				# LoRA adapter checkpoints
 ```
 
 ---
