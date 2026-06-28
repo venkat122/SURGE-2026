@@ -5,9 +5,6 @@ This repository documents the structural engineering, layers, and transition con
 ---
 
 
-
----
-
 ## 🏗️ Detailed Architectural Progression
 
 ### v1 Baseline Model (No Hierarchical Transformer Context)
