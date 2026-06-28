@@ -1,0 +1,20 @@
+              precision    recall  f1-score   support
+
+ CASE_NUMBER       0.73      0.72      0.73       788
+       COURT       0.92      0.91      0.92      1510
+        DATE       0.86      0.89      0.88      1330
+         GPE       0.74      0.76      0.75       900
+       JUDGE       0.91      0.97      0.94       760
+      LAWYER       0.96      0.94      0.95      2386
+         ORG       0.77      0.75      0.76      1073
+OTHER_PERSON       0.85      0.84      0.84      1381
+  PETITIONER       0.78      0.76      0.77      1073
+   PRECEDENT       0.74      0.77      0.75       823
+   PROVISION       0.92      0.93      0.92      1472
+  RESPONDENT       0.72      0.74      0.73      1427
+     STATUTE       0.90      0.92      0.91      1183
+     WITNESS       0.89      0.92      0.90       471
+
+   micro avg       0.85      0.85      0.85     16577
+   macro avg       0.84      0.84      0.84     16577
+weighted avg       0.85      0.85      0.85     16577
