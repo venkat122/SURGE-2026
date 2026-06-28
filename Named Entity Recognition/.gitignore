@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# PyTorch model checkpoints (too large for GitHub ~400MB each)
+*.pt
+*.pth
+*.bin
+
+# Dataset cache files
+*_cache.pt
+
+# Dataset files (download via links in data/README.md)
+data/train/
+data/dev/
+data/test/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Lightning.ai
+.lightning_studio/
+.cache/
