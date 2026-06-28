@@ -35,16 +35,6 @@ NER/
 ├── data/                               # Dataset info and download links
 │   └── README.md
 │
-├── references/                         # Research papers
-│   ├── InLegalBERT_2023.pdf
-│   ├── Legal_NER_EkStep_2210.pdf
-│   ├── Legal_NER_Survey_2024.pdf
-│   ├── Legal_Entity_Extraction.pdf
-│   ├── TEXT2KG_Paper_6.pdf
-│   ├── Legal_NER_Frontiers_AI.pdf
-│   ├── Effective_Search_Legal_NER.pdf
-│   └── NER_Legal_Book_Chapter.pdf
-│
 └── architecture/                       # Architecture documentation
     └── model_architecture.md
 ```
