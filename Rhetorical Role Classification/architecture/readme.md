@@ -4,25 +4,7 @@ This repository documents the structural engineering, layers, and transition con
 
 ---
 
-## 📁 Repository Directory Structure
 
-```text
-.
-├── architecture
-│   └── README.md
-├── data
-│   └── README.md
-├── results
-│   ├── baseline_results.txt
-│   ├── transformer_context_results.txt
-│   └── parallel_shift_loss_results.txt
-├── src
-│   ├── Baseline.ipynb
-│   ├── LegalBERT + Transformer.ipynb
-│   └── LegalBERT + Transformer+Shift Loss.ipynb
-├── .gitignore
-└── README.md
-```
 
 ---
 
