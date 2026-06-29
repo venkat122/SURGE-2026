@@ -24,7 +24,6 @@ NER/
 │   
 │
 ├── results/                            # Test results and training curves
-│   ├── ablation_comparison.md
 │   ├── v2_concat_results.txt
 │   ├── v2_gat_only_results.txt
 │   └── v2_concat_training_curves.png
