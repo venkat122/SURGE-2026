@@ -49,7 +49,7 @@ We evaluated four primary model architectures against the unseen EkStep test dat
 ### Per-Entity F1 Score Comparison
 
 | Entity | BiLSTM + CRF | GAT + CRF | BiLSTM + GAT + Concat + CRF |
-|---|---|---|---|---|
+|---|---|---|---|
 | CASE_NUMBER | 0.66 | 0.73 | 0.77 |
 | COURT | 0.90 | 0.92 | 0.92 | 
 | DATE | 0.87 | 0.88 | 0.89 | 
